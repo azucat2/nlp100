@@ -3,7 +3,8 @@
 import subprocess
 import codecs
 
-lines = sum(1 for line in codecs.open('hightemp.txt', 'r', 'utf-8'))
+with codecs.open('hightemp.txt', 'r', 'utf-8') as file:
+    lines = sum(1 for line in file)
 
 print(str(lines))
 
