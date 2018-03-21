@@ -1,6 +1,5 @@
 #-*- coding: utf-8 -*-
 
-import subprocess
 import codecs
 
 with codecs.open('hightemp.txt', 'r', 'utf-8') as file:
